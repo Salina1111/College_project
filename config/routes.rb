@@ -7,5 +7,10 @@ Rails.application.routes.draw do
   root 'posts#index'
   resources :posts
   resources :users, only: :show
+  resources :tables
+  resources :show
+  resources :table
+
+  
 
 end

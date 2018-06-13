@@ -1,0 +1,50 @@
+
+<div class = "container">
+	<table>
+		<div class = "row">
+			<div class = "col-md-2">
+				Roll_No
+			</div>
+			<div class = "col-md-2">
+				Name
+			</div>
+			<div class = "col-md-2">
+				Batch
+			</div>
+			<div class = "col-md-2">
+				Year
+			</div>
+			<div class = "col-md-2">
+				Contact_Number
+			</div>
+			<div class = "col-md-2">
+				Donation_quantity
+			</div>
+		</div>
+	</div>
+</table>
+
+
+
+<% @tables.each do |table| %>
+<div class = "row">
+	<div class = "col-md-2">
+		<td><p><%= table.Roll_No %></p></td>
+	</div>
+	<div class = "col-md-2">
+		<td><p><%= table.Name %></p></td>
+	</div>
+	<div class = "col-md-2">
+		<td><p><%= table.Faculty %></p></td>
+	</div>
+	<div class = "col-md-2">
+		<td><%= table.Batch %></p></td>
+	</div>
+	<div class = "col-md-2">
+		<td><p><%= table.Contact_Number %></p></td>
+	</div>
+	<div class = "col-md-2">
+		<td><p><%= table.Donation_quantity %></p></td>
+	</div>
+</div>
+<% end %>

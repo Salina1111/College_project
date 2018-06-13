@@ -22,11 +22,15 @@
             <% if user_signed_in? %>
               <span class="nav_links pull-right"><%= link_to 'Home', posts_path %></span>
               <span class="nav_links pull-right"><%= link_to 'New Post', new_post_path %></span>
+              <span class="nav_links pull-right"><%= link_to 'Donate', tables_path %></span>
+              <span class="nav_links pull-right"><%= link_to 'DonationTable', table_index_path %></span>
+
               <%#<span class="nav_links pull-right"><%= link_to 'Edit Settings', edit_user_registration_path %>
               <span class="nav_links pull-right"><%= link_to 'Log out', destroy_user_session_path, method: :delete %></span>
             <% else %>
               <span class="nav_links pull-right"><%= link_to 'Sign up', new_user_registration_path %></span>
               <span class="nav_links pull-right"><%= link_to 'Log in', new_user_session_path %></span>
+
             <% end %>
            </ul>
         </nav>
